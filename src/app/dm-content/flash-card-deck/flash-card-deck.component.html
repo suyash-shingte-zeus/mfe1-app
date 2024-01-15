@@ -1,0 +1,15 @@
+<div class="main">
+    <div class="header">
+        <h2>This is MFE Flash Card Deck Component</h2>
+    </div>
+    <h5>message: {{parentData.message}}</h5>
+
+    <div *ngFor="let flashCardDeck of parentData.deckData">
+        <h3>{{ flashCardDeck.flashCardDeckName }}</h3>
+        <ul>
+            <li *ngFor="let flashCard of flashCardDeck.flashCardList">
+              {{ flashCard.name }}
+            </li>
+        </ul>
+    </div>
+</div>
