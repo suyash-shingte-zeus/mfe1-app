@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
       }
     ])
   ],
-  bootstrap: [HomeComponent]
+  bootstrap: [HomeComponent],
+  exports: [HomeComponent]
 })
 export class HomeMfeModule { }
